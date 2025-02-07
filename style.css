@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 20px 25px;
+}
+.header-parent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header-parent__left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+.input-parent {
+	background-color: #fc004a;
+	color: white;
+	width: 256px;
+	padding: 10px 30px;
+	border-radius: 15px;
+}
+.input-parent input {
+	background-color: #fc004a;
+	color: white;
+	border: none;
+	outline: none;
+}
+.input-parent ::placeholder {
+	color: white;
+}
+.header-parent__right {
+	display: flex;
+	gap: 15px;
+}
+.header-parent__right a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+.header-parent__right a:hover {
+	transform: scale(1.1);
+}
+.icon {
+	display: none;
+}
+
+.cards h1 {
+	padding: 60px 25px;
+	font-size: 40px;
+	font-weight: 400;
+	color: #262626;
+}
+.menu {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+.photo {
+	width: 95.9%;
+	margin: 20px;
+	border-radius: 18px;
+}
+.card {
+	width: 235px;
+	border-radius: 15px;
+	box-shadow: 0px 10px 20px -10px black;
+}
+.card img {
+	border-radius: 15px;
+}
+.card__text {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 15px;
+}
+.card p {
+	color: #fc004a;
+	font-size: 25px;
+}
+
+.card__text button {
+	width: 40px;
+	height: 40px;
+	background-color: #fc004a;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	border: none;
+	border-radius: 12px;
+	margin-left: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card__text button:hover {
+	transform: scale(1.07);
+	transition: all;
+}
+.card__text__button {
+	width: 235px;
+	display: flex;
+	justify-content: flex-end;
+}
+.footer-parent {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 30px 0 20px 0;
+}
+.footer-right {
+	margin-right: 70px;
+}
+
+@media (max-width: 950px) {
+	.header-logo {
+		display: none;
+	}
+	.cards h1 {
+		margin-top: 50px;
+	}
+}
+@media (max-width: 670px) {
+	.header-logo {
+		display: none;
+	}
+	.header-parent {
+		gap: 15px;
+	}
+	.header-parent__right a {
+		font-size: 13px;
+	}
+	.header-parent__right {
+		gap: 8px;
+	}
+	.input-parent {
+		padding: 10px 5px;
+		width: 160px;
+	}
+	.input-parent input {
+		width: 130px;
+	}
+	.cards h1 {
+		margin-top: 80px;
+	}
+	.footer-parent {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: start;
+		justify-content: start;
+	}
+}
+@media (max-width: 425px) {
+	.header-logo {
+		display: none;
+	}
+	.icon {
+		display: block;
+	}
+	.header-parent__right a {
+		display: none;
+	}
+	.input-parent {
+		padding: 15px 25px;
+		width: 200px;
+	}
+	.cards h1 {
+		margin-top: 100px;
+	}
+	.menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.card {
+		width: 180px;
+	}
+	.card img {
+		width: 180px;
+	}
+	.card__text button {
+		margin-left: 100px;
+		width: 32px;
+		height: 32px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+@media (max-width: 390px) {
+	/* .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+	.header-logo {
+		display: none;
+	}
+	.icon {
+		display: block;
+	}
+	.header-parent__right a {
+		display: none;
+	}
+	.input-parent {
+		padding: 15px 25px;
+	}
+	.card {
+		width: 175px;
+	}
+	.card img {
+		width: 175px;
+	}
+	.cards h1 {
+		margin-top: 85px;
+	}
+}
+@media (max-width: 320px) {
+	.header-logo {
+		display: none;
+	}
+	.icon {
+		display: block;
+	}
+	.header-parent__right a {
+		display: none;
+	}
+	.input-parent {
+		padding: 15px;
+		width: 220px;
+	}
+}
+
+
+.harid {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.harid button {
+	width: 150px;
+	height: 50px;
+	border: none;
+	background-color: #fc004a;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.harid button:hover {
+	transform: scale(1.05);
+}
